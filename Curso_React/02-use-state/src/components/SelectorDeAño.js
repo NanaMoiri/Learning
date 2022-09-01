@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
-export const SelectorDeAño = ( {anyo} ) => {
+export const SelectorDeAño = () => {
 
   const [anyo, setAnyo] = useState(anyo);
 
