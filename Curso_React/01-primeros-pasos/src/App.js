@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import MiComponenete from './MiComponente';
+import { Otrocomp } from './Otrocomp';
 import { SegundoComponente } from './SegundoComponente';
 import { TercerComponente } from './TercerComponente';
 import { EventosComponente } from './EventosComponente';
@@ -16,9 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Otrocomp />
         {/* Ejemplo de como hacer un comentario en JSX*/}
         <EventosComponente />
         <TercerComponente nombre = "Gemma" apellido = "Gomez"  ficha = {informacion}/>

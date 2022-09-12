@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 // import { MiPrimerEstado } from './components/MiPrimerEstado';
-import { SelectorDeAño } from './components/SelectorDeAño';
+import { SelectorDeAnyo } from './components/SelectorDeAño';
 
 function App() {
 
-  let anyoactual = new Date().getFullYear();
+  const anyoActual = new Date().getFullYear();
 
   return (
     <div className="App">
@@ -16,8 +16,7 @@ function App() {
         
         {/* <MiPrimerEstado /> */}
         {/*EJERCICIO */}
-        <h1>{anyoactual}</h1>
-        <SelectorDeAño anyo= {anyoactual}/>
+        <SelectorDeAnyo year={anyoActual}/>
       </header>
     </div>
   );
