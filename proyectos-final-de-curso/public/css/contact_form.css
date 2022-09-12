@@ -1,0 +1,31 @@
+#imagen_fondo {
+  background-image: url(backgrounds/dumbbell.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+form {
+  flex-direction: column;
+  width: 100%;
+}
+main {
+  margin: 70px 0;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 5px;
+}

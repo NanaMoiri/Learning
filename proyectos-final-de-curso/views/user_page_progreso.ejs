@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de usuario</title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/user_page.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <!-- Font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font awesona icons -->
+  <script src="https://kit.fontawesome.com/ebb6d21e80.js" crossorigin="anonymous"></script>
+  <!-- ChartJS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- WEB DE REFERENCIA 
+https://www.puzzlebreak.us/contact-and-directions -->
+</head>
+
+<body>
+  <div id="imagen_fondo">
+    <%- include("partials/header") %>
+      <main class="row">
+        <aside class="col-m-3">
+          <button><a href="/user_page">Información personal</a></button>
+          <hr>
+          <button><a href="/user_progress">Progreso</a></button>
+        </aside>
+        <section id="section" class="col-m-8">
+          <h1>TU PROGRESO</h1>
+          <form id="statsform">
+            <h2>Actualiza tus estadísticas</h2>
+            <div>
+              <label for="peso">Peso actual</label>
+              <input type="number" id="peso" name="peso" placeholder="Añade tu peso">
+            </div>
+            <div>
+              <label for="imc">IMC actual</label>
+              <input type="number" id="imc" name="imc" placeholder="Añade tu imc">
+            </div>
+            <div>
+              <label for="bmr">BMR actual</label>
+              <input type="number" id="peso" name="bmr" placeholder="Añade tu bmr">
+            </div>
+            <button>Añadir datos</button>
+          </form>
+          <button id="boton_grafico" value="<% [] %>">Ver grafico</button>
+          <canvas id="myChart" class="d-none"></canvas>
+          <% if (imagenes1.length> 0) { %>
+            <h2>Antes</h2>
+            <div class="imagenes">
+              <div>
+                <h3>Delante</h3>
+                <img src=<%=imagenes1[0].imagen_delante %> alt="imagen_delante">
+              </div>
+              <div>
+                <h3>Detrás</h3>
+                <img src=<%=imagenes1[0].imagen_detras %> alt="imagen_delante">
+              </div>
+            </div>
+            <% } %>
+              <% if (imagenes2.length> 0) { %>
+                <h2>Después</h2>
+                <div class="imagenes">
+                  <div>
+                    <h3>Delante</h3>
+                    <img src=<%=imagenes2[0].imagen_delante %> alt="imagen_delante">
+                  </div>
+                  <div>
+                    <h3>Detrás</h3>
+                    <img src=<%=imagenes2[0].imagen_detras %> alt="imagen_delante">
+                  </div>
+                </div>
+                <% } %>
+                  <button id="modalTriggerAddImg">Subir Fotos Antes</button>
+                  <button id="modalTriggerAddImg2">Subir Fotos Después</button>
+        </section>
+      </main>
+  </div>
+  <%- include("partials/footer") %>
+    <!-- AÑADIR MODAL -->
+    <div class="modal">
+      <!-- modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="form addImageForm" enctype="multipart/form-data">
+          <h3>Añadir Imagen del Antes</h3>
+          <label for="antes_delante">Delante</label>
+          <input type="file" id="antes_delante" class="custom-file-input" name="addImagAntDel">
+          <label for="antes_detras">Detrás</label>
+          <input type="file" id="antes_detras" class="custom-file-input" name="addImagAntDet">
+          <button>Cargar Imagenes</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal"> -->
+      <!-- modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="form addImageForm2" enctype="multipart/form-data">
+          <h3>Añadir Imagen del Después</h3>
+          <label for="despues_delante">Delante</label>
+          <input type="file" id="antes_delante" class="custom-file-input" name="addImagDesDel">
+          <label for="despues_detras">Detrás</label>
+          <input type="file" id="antes_detras" class="custom-file-input" name="addImagDesDet">
+          <button>Cargar Imagenes</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const data = {
+        datasets: [{
+          label: 'My First dataset',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [{x:'2016-12-25', y:20}, {x:'2016-12-26', y:10}],
+        }]
+      };
+      const config = {
+        type: 'line',
+        data,
+        options: {}
+      };
+      var myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script>
+    <!-- JS links -->
+    <script type="module" src="js/progreso.js"></script>
+    <script type="module" src="js/grafico.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/responsive_menu.js"></script>
+</body>
+
+</html>

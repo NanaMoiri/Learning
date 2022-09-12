@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogIn/Register</title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/register_form.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ebb6d21e80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div  id="imagen_fondo">
+    <%- include("partials/header") %>
+      <main class="row center">
+          <section class="col-xl-6">
+            <form class="ds-flex center signUpForm">
+              <h1>Registro</h1>
+              <input type="text" placeholder="Nombre de usuario* (mín 1 / máx 20)" name="nombre">
+              <input type="email" placeholder="Email*" name="signUpEmail">
+              <input type="password" placeholder="Contraseña (mín 6)" name="pass1">
+              <input type="password" placeholder="Confirmar contraseña" name="pass2">
+              <button>Registrar</button>
+              <div class="response"></div>
+            </form>
+          </section>
+          <section class="col-xl-6">
+            <form class="ds-flex center signInForm">
+              <h1>Iniciar sesión</h1>
+              <input type="email" placeholder="Email*" name="signInEmail">
+              <input type="password" placeholder="Contraseña" name="pass">
+              <button type="submit">Entrar</button>
+              <a href="/forgotPass" class="contrasena text-center mt-2">¿Has olvidado la contraseña?</a>
+              <div class="response2"></div>
+            </form>
+          </section>
+      </main>
+  </div>
+  <%- include("partials/footer") %>    
+    <script type="module" src="js/login_register.js"></script>
+    <script src="js/responsive_menu.js"></script>
+</body>
+
+</html>

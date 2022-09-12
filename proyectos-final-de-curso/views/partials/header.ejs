@@ -1,0 +1,27 @@
+<header>
+  <div class="nav-bar">
+    <!-- nav-bar desktop -->
+    <nav class="nav-bar-desktop nav-bar-expand-xl">
+      <ul>
+        <% if (!idUser) { %>
+          <li><a href="/" <% if (pageName === 'index') { %> class= "active" <%} %>>Home</a></li>
+          <li><a href="/utilities"<% if (pageName === 'utilities') { %> class= "active" <%} %>>Utilidades</a></li>
+          <li><a href="/hourglass"<% if (pageName === 'routines' || pageName === 'routines_login') { %> class= "active" <%} %>>Rutinas de ejercicio</a></li>
+          <li class="img_logo"><img src="imagenes/logo_bueno.png"  alt="logo"></li>
+          <li><a href="/contact"<% if (pageName === 'contact') { %> class= "active" <%} %>>Contacto</a></li>
+          <li><a href="/login_register" <% if (pageName === 'login_register') { %> class= "active" <%} %>>Registro/Inicio de sesión</a></li>
+        <% } else { %>
+          <li><a href="/"<% if (pageName === 'index') { %> class= "active" <%} %>>Home</a></li>
+          <li><a href="/utilities"<% if (pageName === 'utilities') { %> class= "active" <%} %>>Utilidades</a></li>
+          <li><a href="/hourglass"<% if (pageName === 'routines' || pageName === 'routines_login') { %> class= "active" <%} %>>Rutinas de ejercicio</a></li>
+          <li class="img_logo"><img src="imagenes/logo_bueno.png"  alt="logo"></li>
+          <li><a href="/contact"<% if (pageName === 'contact') { %> class= "active" <%} %>>Contacto</a></li>
+          <li><a href="/user_page"<% if (pageName === 'user_page') { %> class= "active" <%} %>>Pagina de usuario</a></li>
+          <li><a href="/logout">Cerrar sesión</a></li>
+        <% } %> 
+      </ul>
+    </nav>
+    <!-- burger -->
+    <i class="fa-solid fa-bars burger"></i>
+  </div>
+</header>

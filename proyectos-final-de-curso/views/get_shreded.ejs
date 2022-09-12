@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutinas</title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/routines.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font awesona icons -->
+  <script src="https://kit.fontawesome.com/ebb6d21e80.js" crossorigin="anonymous"></script>
+  <!-- WEB DE REFERENCIA 
+https://www.puzzlebreak.us/contact-and-directions -->
+</head>
+
+<body>
+  <div id="imagen_fondo">
+    <%- include("partials/header") %>
+      <main>
+        <aside class="col-xl-3">
+          <button><a href="/hourglass">Rutina Hourglass</a></button>
+          <hr>
+          <button><a href="/get_fit">Rutina Get Fit</a></button>
+          <hr>
+          <button><a href="/get_shreded">Get Shreded</a></button>
+        </aside>
+        <section class="col-xl-9">
+          <h1>Lunes</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/abP8Qlee7lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h1>Miercoles</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WSqYBU_6agQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h1>Viernes</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MsDxfOwH3Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+      </main>
+  </div>
+  <%- include("partials/footer") %>
+    <!-- JS links -->
+    <script src="js/responsive_menu.js"></script>
+</body>
+
+</html>

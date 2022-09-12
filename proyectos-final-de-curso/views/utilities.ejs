@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilidades</title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- font awesona icons -->
+  <script src="https://kit.fontawesome.com/ebb6d21e80.js" crossorigin="anonymous"></script>
+  <!-- WEB DE REFERENCIA 
+https://www.puzzlebreak.us/contact-and-directions -->
+</head>
+
+<body>
+  <div id="imagen_fondo">
+    <%- include("partials/header") %>
+      <main>
+        <section class="row">
+          <table class="col-xl-6">
+            <thead>
+              <td>
+                <h2 class="text-center">CALCULA TU METABOLISMO BASAL</h2>
+              </td>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="radio" id="mujer" name="sexo" value="mujer" checked>
+                  <label for="mujer">Mujer</label>
+                  <input type="radio" id="hombre" name="sexo" value="hombre">
+                  <label for="hombre">Hombre</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  <label for="edad">Edad</label>
+                </td>
+                <td>
+                  <input type="number" id="edad" class="text-center" placeholder="edad(años)">
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  <label for="altura1">Altura</label>
+                </td>
+                <td>
+                  <input type="number" id="altura1" class="text-center" placeholder="altura(cm)">
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  <label for="peso1">Peso</label>
+                </td>
+                <td>
+                  <input type="number" id="peso1" class="text-center" placeholder="peso(kg)">
+                </td>
+              </tr>
+              <tr>
+                <td id="actividades">
+                  <input type="radio" id="sedentario" name="actividad" value="sedentario" checked>
+                  <label for="sedentario">Sedentario</label>
+                  <input type="radio" id="ligero" name="actividad" value="ligero">
+                  <label for="ligero">Ligeramente activo</label>
+                  <input type="radio" id="activo" name="actividad" value="activo" >
+                  <label for="activo">Activo</label>
+                  <input type="radio" id="muy_activo" name="actividad" value="muy_activo">
+                  <label for="muy_activo">Muy activo</label>
+                </td>
+              </tr>
+              <tr class="row">
+                <td class="label">
+                  <label for="tmb">Tu TMB es (kcal/dia)</label> 
+                </td>
+                <td>
+                  <input type="number" id="tmb" class="text-center" placeholder="TMB"></td>
+              </tr>
+              <tr>
+                <td>
+                  <button>CALCULA</button></td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+<!-- ----------------------------------------------------------------------------------- -->
+          <table class="col-xl-6">
+            <thead>
+              <td>
+                <h2 class="text-center">CALCULA TU IMC</h2>
+              </td>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="label">
+                  <label for="altura2">Altura</label>
+                </td>
+                <td>
+                  <input type="number" id="altura2" class="text-center" placeholder="altura(cm)">
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  <label for="peso2">Peso</label>
+                </td>
+                <td>
+                  <input type="number" id="peso2" class="text-center" placeholder="peso(kg)">
+                </td>
+              </tr>
+              <tr>
+                <td class="label">
+                  <label for="imc">Tu IMC es</label>
+                </td>
+                <td>
+                  <input type="number" id="imc" class="text-center" placeholder="IMC">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>CALCULA</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  <%- include("partials/footer") %>
+    <!-- JS links -->
+<script src="js/responsive_menu.js"></script>
+<script src="js/calculadoras_imc_tmb.js"></script>
+</body>
+
+</html>

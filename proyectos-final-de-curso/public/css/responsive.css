@@ -1,0 +1,130 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* burger menu */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-responsive {
+  justify-content: center;
+}
+.nav-bar-desktop ul, .nav-bar-responsive ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar-desktop ul li {
+  cursor: pointer;
+}
+.nav-bar-responsive ul li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.nav-bar-responsive ul {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* burger */
+
+.burger{
+  cursor: pointer;
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+
+/* FIN MENU RESPONSIVE */
+
+/*media queries*/
+[class*="col-"] {
+  width: 100%;
+}
+/* EXTRA: 1200px */
+@media screen and (min-width: 1200px) {
+  .col-xl-1 { width: 8.33%; }
+  .col-xl-2 { width: 16.66%; }
+  .col-xl-3 { width: 25%; }
+  .col-xl-4 { width: 33.33%; }
+  .col-xl-5 { width: 41.66%; }
+  .col-xl-6 { width: 50%; }
+  .col-xl-7 { width: 58.33%; }
+  .col-xl-8 { width: 66.66%; }
+  .col-xl-9 { width: 75%; }
+  .col-xl-10 { width: 83.33%; }
+  .col-xl-11 { width: 91.66%; }
+  .col-xl-12 { width: 100%; }
+}
+
+/* TABLETS: 768px */
+@media screen and (min-width: 768px) {
+  .col-m-1 { width: 8.33%; }
+  .col-m-2 { width: 16.66%; }
+  .col-m-3 { width: 25%; }
+  .col-m-4 { width: 33.33%; }
+  .col-m-5 { width: 41.66%; }
+  .col-m-6 { width: 50%; }
+  .col-m-7 { width: 58.33%; }
+  .col-m-8 { width: 66.66%; }
+  .col-m-9 { width: 75%; }
+  .col-m-10 { width: 83.33%; }
+  .col-m-11 { width: 91.66%; }
+  .col-m-12 { width: 100%; }
+}
+
+/* MOBILE 576px */
+@media screen and (min-width: 576px) {
+  .col-s-1 { width: 8.33%; }
+  .col-s-2 { width: 16.66%; }
+  .col-s-3 { width: 25%; }
+  .col-s-4 { width: 33.33%; }
+  .col-s-5 { width: 41.66%; }
+  .col-s-6 { width: 50%; }
+  .col-s-7 { width: 58.33%; }
+  .col-s-8 { width: 66.66%; }
+  .col-s-9 { width: 75%; }
+  .col-s-10 { width: 83.33%; }
+  .col-s-11 { width: 91.66%; }
+  .col-s-12 { width: 100%; }
+}
+
+/* TITULOS PARA MOVIL */
+@media screen and (max-width: 768px){
+  h1 {
+    font-size: 3em !important;
+  }
+  h2 {
+    font-size: 2em !important;
+  }
+  button {
+    font-size: 1em;
+  }
+  .flex-dir {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 380px){
+  h1 {
+    font-size: 2em !important;
+  }
+  h2 {
+    font-size: 1em !important;
+  }
+  .nav-bar-desktop ul, .nav-bar-responsive ul {
+    padding: 10% 0;
+  }
+  .flex-dir {
+    display: block;
+  }
+}
+
+
+

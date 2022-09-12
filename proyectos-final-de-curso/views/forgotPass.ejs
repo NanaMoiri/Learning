@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olvido Contraseña</title>
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/contact_form.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font-family -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ebb6d21e80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="imagen_fondo">
+    <%- include("partials/header") %>
+      <main>
+        <div class="row center">
+          <div class="col-m-9">
+            <form class="forgotPassForm ds-flex center">
+              <h1>Recuperar contraseña</h1>
+              <input type="email" placeholder="Email*" name="forgotPassEmail">
+              <button type="submit">Recuperar contraseña</button>
+              <a href="/login_register" class="contrasena text-center mt-2"><i class="fas fa-arrow-alt-left"></i> Ir a formulario de login</a>
+              <div class="response"></div>
+            </form>
+          </div>
+        </div>
+      </main>
+  </div>
+  <%- include("partials/footer") %>
+  <script src="js/responsive_menu.js"></script>
+  <script type="module" src="js/forgotPass.js"></script>
+</body>
+
+</html>

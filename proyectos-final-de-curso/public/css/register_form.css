@@ -1,0 +1,28 @@
+#imagen_fondo {
+  background-image: url(backgrounds/mujer_espaldas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+
+main {
+  margin: 70px 0;
+}
+
+form {
+  flex-direction: column;
+}
+
+input{
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 5px;
+}

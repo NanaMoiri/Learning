@@ -1,0 +1,89 @@
+#imagen_fondo {
+  width: 100%;
+  background-image: url(backgrounds/bird_dog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+main {
+  margin: 30px 0;
+  padding: 25px !important;
+}
+
+section {
+  background-color: var(--quaternary-color);
+  border: solid 1px white;
+  display: flex;
+  padding: 2%;
+  height: 100%;
+  color: white;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+}
+
+thead {
+  width: 100%;
+  margin: 20px;
+}
+
+thead tr {
+  display: flex;
+  justify-content:center;
+}
+
+tr {
+  margin: 5px;
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+td {
+  display: flex;
+  justify-content: right;
+  margin-right: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+thead td {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#tmb {
+  height: 26px;
+}
+
+.label {
+  width: 90px;
+}
+
+.td_radio {
+  justify-content: center !important;
+}
+
+.calc_cont div{
+  padding: 1%;
+}
+input[type=radio] {
+  margin: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

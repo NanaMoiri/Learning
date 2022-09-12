@@ -1,0 +1,167 @@
+/* WEB DE REFERENCIA */
+/* https://www.puzzlebreak.us/contact-and-directions*/
+
+:root {
+  --primary-color: rgb(19, 19, 19);
+  --secondary-color: rgb(252, 171, 104);
+  --tertiary-color: rgb(252, 143, 55);
+  --quaternary-color: rgba(19, 19, 19, 0.7);
+  --text-color: white;
+  --background-color: rgb(19, 19, 19);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos generales */
+
+.label {
+  width: 90px;
+}
+
+.column {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-align{
+  align-items: center;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.ds-flex {
+  display: flex;
+}
+
+.j-c-center {
+  justify-content: center;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.responsive_bar_fondo {
+  background-color: rgba(0, 0 ,0, 0.65);
+  width: 100%;
+}
+
+.contrasena {
+  margin-top: -5px;
+  color: var(--text-color);
+  font-size: large;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contrasena:hover {
+  text-decoration: underline;
+} 
+
+.active {
+  color:var(--tertiary-color);
+  text-decoration: underline;
+}
+
+.margin-auto {
+  margin: auto;
+}
+/* HEADER */
+
+header {
+  font-weight: 700;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+li img {
+  cursor:default;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+nav li {
+  margin: 30px;
+  font-size: 20px;
+}
+
+nav img {
+  width: 100px;
+}
+
+/* MAIN CONTENT */
+
+main {
+  padding: 20px;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+button {
+  padding: 15px;
+  border-style: none;
+  border-radius: 20px;
+  margin: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+button:hover{
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+  padding: 20px;
+  text-align: center;
+}
+
+footer h3{
+  margin: 10px;
+}

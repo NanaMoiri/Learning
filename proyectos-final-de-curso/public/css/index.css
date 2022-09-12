@@ -1,0 +1,27 @@
+#imagen_fondo{ 
+  width: 100%;
+  background-image: url(backgrounds/mujer_espejo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main {
+  margin: 100px 0;
+}
+
+h1 {
+  font-size: 75px;
+  margin: 5px;
+  font-weight: 800;
+}
+
+
+h2 {
+  font-size: 39px;
+}
