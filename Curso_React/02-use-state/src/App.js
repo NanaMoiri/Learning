@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import { Ejercicio } from './components/Ejercicio';
 // import { MiPrimerEstado } from './components/MiPrimerEstado';
-import { SelectorDeAnyo } from './components/SelectorDeAño';
+
 
 function App() {
 
@@ -16,7 +17,9 @@ function App() {
         
         {/* <MiPrimerEstado /> */}
         {/*EJERCICIO */}
-        <SelectorDeAnyo year={anyoActual}/>
+
+        <Ejercicio year={anyoActual}/>
+
       </header>
     </div>
   );
