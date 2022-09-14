@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.label {
+  display: block;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 5px;
+  color: #282c34;
+  margin: 15px;
+}
+
+.label-green {
+  background-color: green;
+  color: white;
+}
