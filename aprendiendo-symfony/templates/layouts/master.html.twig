@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block titulo %} Inicio {% endblock %} - Curso PHP Symfony
+    </title>
+    {% block stylesheets %} {% endblock %}
+    {% block javascripts %} {% endblock %}
+</head>
+<body>
+    <header>
+        {% block cabecera %} <h1>cabecera</h1>{% endblock %}
+    </header>
+    <main>
+        {% block contenido_principal %} <h2>CONTENIDO PRINCIPAL</h2> {% endblock %}
+    </main>
+    <div id="aside">
+        {% block barra_lateral %} <h2>Barra lateral</h2> {% endblock %}
+    </div>
+
+    <footer>
+        {% block pie %} <h6>pie de página</h6>{% endblock %}
+    </footer>
+    
+</body>
+</html>

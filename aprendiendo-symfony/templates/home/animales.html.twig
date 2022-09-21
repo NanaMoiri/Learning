@@ -1,0 +1,58 @@
+{% extends "layouts/master.html.twig" %}
+
+{% block titulo %} Animales {% endblock %}
+
+{% block cabecera%}
+    {{parent()}}
+    <h1>{{ title }}</h1>
+{% endblock %}
+
+{% block contenido_principal %}
+    {#
+    <h1>{{ title }}</h1>
+    <h2>Tu nombre es: {{ nombre }}</h2>
+    <h2>Tus apellidos son: {{ apellidos }}</h2>
+    #}
+    
+    {# Crear una variable #}
+    {% set perro = 'pastor aleman' %}
+    {{ perro }}
+
+    {# TRABAJAR CON ARRAYS #}
+    {{ dump(animales) }}
+    {{ animales[1] }}
+    {{ dump(aves) }}
+    {{ aves.tipo ~ ' - ' ~ aves.edad }}
+
+    {# Condicionales #}
+    {% if aves.tipo == 'paloma' %}
+        <h1>Cuidado una rata voladora</h1>
+    {% else %}
+        <h1>No hay palomas a la vista</h1>
+    {% endif %}
+
+    {#Bucles#}
+
+    {% if animales|length >= 1 %}
+        <ul>
+            {% for animal in animales %}
+                <li>
+                    {{animal}}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% for i in 0..10 %}
+        {{i}} <br>
+    {% endfor %}
+
+    {% if aves.color starts with 'bl' %}
+
+        <h1>Empieza por </h1>
+
+    {% endif %}
+    <hr>
+    {{ include('partials/funciones.html.twig') }}
+
+{% endblock %}
