@@ -3,7 +3,7 @@
 $server = 'localhost';
 $username = 'root';
 $passowrd = '';
-$database = 'proyecto_1_php';
+$database = 'php-blog-project';
 $db = mysqli_connect($server, $username, $passowrd, $database);
 
 mysqli_query($db, "SET NAMES 'utf8'");
@@ -16,4 +16,4 @@ mysqli_query($db, "SET NAMES 'utf8'");
 
 //Iniciar sesion
 
-// session_start();
+session_start();

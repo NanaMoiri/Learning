@@ -12,4 +12,4 @@
                 <a href="\Autodidacta\Proyectos_personales\Learning\Blog_PHP\register.php">Registrate aquí</a>
             </form>
         </div>
-    </aside>
+</aside>

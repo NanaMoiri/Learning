@@ -21,6 +21,24 @@ body {
 
 /*GENERAL STYLES*/
 
+.alert {
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-alert {
+    background-color: red;
+}
+
+.success-alert
+{
+    background-color: green;
+}
+
 .ds-flex{
     display: flex;
 }

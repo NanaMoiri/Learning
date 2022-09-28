@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Videojuegos</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
